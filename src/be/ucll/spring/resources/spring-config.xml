@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="triangle0" class="be.ucll.spring.domain.Triangle">
+    </bean>
+
+    <bean id="triangle1" class="be.ucll.spring.domain.Triangle">
+        <property name="type" value="Gelijkzijdige driehoek" />
+    </bean>
+
+<!--
+        <bean id="triangle1" class="be.ucll.spring.domain.Triangle">
+            <constructor-arg  value="Gelijkzijdige driehoek" />
+        <constructor-arg type="int"  value="20" />
+        <constructor-arg index="0" value="Gelijkzijdige driehoek" />
+        <constructor-arg index="1" value="20" />
+    </bean>
+-->
+
+    <bean id="triangle2" class="be.ucll.spring.domain.Triangle">
+        <constructor-arg type="java.lang.String" value="Rechthoekige driehoek" />
+        <!--
+        type is optional as long as Spring can determine the type
+        other wat to do this is give an index: index="0" for the first parameter
+        and index="1" for the second parameter, and so on...
+        -->
+    </bean>
+
+</beans>
