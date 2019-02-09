@@ -31,6 +31,7 @@ public class Triangle {
         this.height = height;
     }
 */
+
     public void draw(){
         System.out.println("Triangle drawn!");
     }
